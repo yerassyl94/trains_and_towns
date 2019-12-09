@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+}
+
+group 'main'
+version '1.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+run {
+    standardInput = System.in
+}
+
+jar {
+    manifest{
+        attributes(
+                "Class-path": configurations.compile.collect { it.getName()}.join(' '),
+                "Main-Class": "trainsAndTowns.Application"
+        )
+    }
+}
+
+mainClassName = "trainsAndTowns.Application"
