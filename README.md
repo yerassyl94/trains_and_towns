@@ -10,18 +10,18 @@ Application is developed via **Java** programming language for calculation of *d
  - Algorithm builds queue of towns when it is visited, adds up its distance to result distance.<br/> 
  Class: **Solutions**, method: **getDistance**
  
- #### **Get all possible routes(problems from 6-7)**
+ #### *Get all possible routes(problems from 6-7)*
  
   - The method **getNumberOfTrips** implements **Depth-First Search(DFS)** algorithm. From the starting point it 
   recursively search for destination point. All possible routes stored in list of routes there we can filter it 
   by other conditions
   
- #### **Find shortest route(problems 8-9)**
+ #### *Find shortest route(problems 8-9)*
  
   - The method **getShortestDistanceRoute** implements **Djikstra** algorithm. It initialize map that store shortest 
   distance to all possible routes from starting point. Then we can get desired destination value.
   
- #### **Find all possible routes with a distance limit(problem 10)**
+ #### *Find all possible routes with a distance limit(problem 10)*
  
   - The method **getNumberOfTripsLessThan** like method **getNumberOfTrips** implements **Depth-First Search(DFS)** 
   algorithm. After getting all possible routes, we can filter it by distance limit
